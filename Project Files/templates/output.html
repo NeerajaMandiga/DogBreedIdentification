@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Result - DOG BREED.</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="brand">DOG BREED.</div>
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a class="btn inspect" href="/predict">Inspect</a>
+    </nav>
+
+    <main class="container result">
+      <h2>Prediction Result</h2>
+      <div class="result-card">
+        <div class="result-image">
+          <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="uploaded" />
+        </div>
+        <div class="result-info">
+          <h3>Predicted Breed: <span class="accent">{{ label }}</span></h3>
+          <p>Confidence: <strong>{{ confidence }}%</strong></p>
+          <a class="btn" href="/predict">Back</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

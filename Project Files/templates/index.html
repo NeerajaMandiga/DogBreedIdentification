@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOG BREED. - Home</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="brand">DOG BREED.</div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn inspect" href="/predict">Inspect</a>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="hero-inner">
+        <h1>Dog Breed Identification</h1>
+        <p>Identification of Different Dog Breeds</p>
+        <a class="btn" href="/predict">Inspect</a>
+      </div>
+    </header>
+
+    <section id="about" class="container">
+      <h2>About Section:-</h2>
+      <div class="about-grid">
+        <div class="grid-images">
+          <!-- sample placeholders -->
+          <div class="sample-grid">
+            <img src="/static/images/sample1.jpg" alt="sample"/>
+            <img src="/static/images/sample2.jpg" alt="sample"/>
+            <img src="/static/images/sample3.jpg" alt="sample"/>
+            <img src="/static/images/sample4.jpg" alt="sample"/>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="card"><h3>Data Preparation</h3><p>Obtain, clean, and augment images using ImageDataGenerator.</p></div>
+          <div class="card"><h3>Model Building</h3><p>Use VGG19 pretrained on ImageNet and add custom head.</p></div>
+          <div class="card"><h3>Training & Evaluation</h3><p>Train for a few epochs, validate and save the best model.</p></div>
+          <div class="card"><h3>Deployment</h3><p>Serve predictions through a Flask web app.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Location:</strong> Your City, Country</p>
+          <p><strong>Email:</strong> contact@example.com</p>
+          <p><strong>Phone:</strong> +1 555 555 5555</p>
+        </div>
+        <form class="contact-form">
+          <input placeholder="Name" />
+          <input placeholder="Email" />
+          <input placeholder="Subject" />
+          <textarea placeholder="Message"></textarea>
+          <button class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upload - DOG BREED.</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="brand">DOG BREED.</div>
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a class="btn inspect" href="/predict">Inspect</a>
+    </nav>
+
+    <main class="container">
+      <h2>Upload an Image</h2>
+      <form id="uploadForm" action="/result" method="post" enctype="multipart/form-data">
+        <div class="upload-box">
+          <input type="file" name="file" id="fileInput" accept="image/*" />
+          <div id="preview" class="preview">No image selected</div>
+        </div>
+        <button class="btn" type="submit" id="predictBtn">Predict</button>
+        <div id="spinner" class="spinner hidden">Predicting...</div>
+      </form>
+    </main>
+
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>
